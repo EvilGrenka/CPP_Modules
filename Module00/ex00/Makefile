@@ -14,16 +14,16 @@ SRCS			= megaphone.cpp
 OBJS			= $(SRCS:.cpp=.o)
 
 CXX				= clang++
-RM				= rm -f
+RM				= del
 CXXFLAGS		= -Wall -Wextra -Werror -I.
 
-NAME			= megaphone
+NAME			= megaphone.exe
 
 all:			$(NAME)
 
-$(NAME):		$(OBJS)
-				$(CXX) $(CXXFLAGS) -o $(NAME) $(OBJS)
-
+$(NAME):	$(OBJS)
+			$(CXX) $(CXXFLAGS) -o $(NAME) $(OBJS)
+			
 clean:
 				$(RM) $(OBJS)
 
