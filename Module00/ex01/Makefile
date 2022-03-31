@@ -5,30 +5,31 @@
 #                                                     +:+ +:+         +:+      #
 #    By: rnoriko <rnoriko@student.21-school.ru>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/03/29 23:27:41 by rnoriko           #+#    #+#              #
-#    Updated: 2022/03/31 18:13:10 by rnoriko          ###   ########.fr        #
+#    Created: 2022/03/31 13:45:28 by rnoriko           #+#    #+#              #
+#    Updated: 2022/03/31 17:09:15 by rnoriko          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRCS			= megaphone.cpp
+SRCS			= contact.cpp main.cpp phonebook.cpp
+HEADERS			= colors.hpp contact.hpp phonebook.hpp
 OBJS			= $(SRCS:.cpp=.o)
 
 CXX				= clang++
 RM				= rm -rf
 CXXFLAGS		= -Wall -Wextra -Werror -I.
 
-NAME			= megaphone
+NAME			= phonebook
 
 all:			$(NAME)
 
-$(NAME):	$(OBJS)
-			@printf "🪧 $@ object file was created!\n"
+$(NAME):	$(OBJS) $(HEADERS)
+			@printf "🪧 $@ object files was created!\n"
 			$(CXX) $(CXXFLAGS) -o $(NAME) $(OBJS)
 			@printf "🧶 $@ executable file was created!\n"
 			
 clean:
 				$(RM) $(OBJS)
-				@printf "🧹 Delete $(NAME) object file...\n"
+				@printf "🧹 Delete $(NAME) object files...\n"
 
 fclean:			clean
 				$(RM) $(NAME)
