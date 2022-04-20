@@ -1,0 +1,43 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Cat.cpp                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rnoriko <rnoriko@student.21-school.ru>     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/04/20 10:43:25 by rnoriko           #+#    #+#             */
+/*   Updated: 2022/04/20 10:43:26 by rnoriko          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "../headers/Cat.hpp"
+
+Cat::Cat()
+{
+	std::cout << "Cat constructor called" << std::endl;
+	this->_type = "Cat";
+	this->_brain = new Brain();
+}
+
+Cat::Cat( const Cat &src ) { *this = src; }
+
+Cat::~Cat()
+{
+	delete this->_brain;
+	std::cout << "Cat Destructor called" << std::endl;
+}
+
+Cat & Cat::operator=( const Cat &rhs )
+{
+	if (this == &rhs)
+		return (*this);
+	this->_type = rhs._type;
+	this->_brain = new Brain();
+	this->_brain = rhs._brain;
+	return (*this);
+}
+
+void	Cat::makeSound() const
+{
+	std::cout << "looks like a Cat sound!" << std::endl;
+}
