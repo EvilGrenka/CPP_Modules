@@ -6,7 +6,7 @@
 /*   By: rnoriko <rnoriko@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/19 16:45:23 by rnoriko           #+#    #+#             */
-/*   Updated: 2022/04/19 16:45:24 by rnoriko          ###   ########.fr       */
+/*   Updated: 2022/04/23 13:31:17 by rnoriko          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ class FragTrap : public ClapTrap
 		FragTrap( const FragTrap &src );
 		~FragTrap();
 		FragTrap & operator = ( const FragTrap &rhs );
+		void	attack( std::string const & target );
 		void	highFivesGuys( void );
 };
 

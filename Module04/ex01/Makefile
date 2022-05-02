@@ -6,7 +6,7 @@
 #    By: rnoriko <rnoriko@student.21-school.ru>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/20 10:25:40 by rnoriko           #+#    #+#              #
-#    Updated: 2022/04/20 10:27:37 by rnoriko          ###   ########.fr        #
+#    Updated: 2022/04/26 08:29:40 by rnoriko          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ SRCS_FOLDER = srcs
 OBJECTSDIR = objects
 HEADERS_FOLDER = headers
 
-FLAGS = -Wall -Wextra -Werror
+FLAGS = -Wall -Wextra -Werror -std=c++98
 RED = \033[1;31m
 GREEN = \033[1;32m
 YELLOW = \033[1;33m

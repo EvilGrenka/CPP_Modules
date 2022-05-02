@@ -6,7 +6,7 @@
 /*   By: rnoriko <rnoriko@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/20 10:51:04 by rnoriko           #+#    #+#             */
-/*   Updated: 2022/04/20 10:51:05 by rnoriko          ###   ########.fr       */
+/*   Updated: 2022/04/26 08:28:49 by rnoriko          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ class AMateria
 {
 	protected:
 		std::string	_type;
+		
 	public:
 		AMateria();
 		AMateria( std::string const & type );

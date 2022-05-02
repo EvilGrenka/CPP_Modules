@@ -6,7 +6,7 @@
 /*   By: rnoriko <rnoriko@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/20 10:51:10 by rnoriko           #+#    #+#             */
-/*   Updated: 2022/04/20 10:51:11 by rnoriko          ###   ########.fr       */
+/*   Updated: 2022/04/26 08:28:50 by rnoriko          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ class Character: public ICharacter
 	private:
 		std::string	_Name;
 		AMateria**	_Inventory;
+		
 	public:
 		Character();
 		Character( std::string Name );

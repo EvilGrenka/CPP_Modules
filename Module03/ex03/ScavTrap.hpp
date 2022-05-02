@@ -6,7 +6,7 @@
 /*   By: rnoriko <rnoriko@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/20 09:40:40 by rnoriko           #+#    #+#             */
-/*   Updated: 2022/04/20 09:40:41 by rnoriko          ###   ########.fr       */
+/*   Updated: 2022/04/23 13:22:50 by rnoriko          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,5 @@ class ScavTrap: virtual public ClapTrap
 		void	attack( std::string const & target );
 		void	guardgate();
 };
-
 
 #endif

@@ -6,7 +6,7 @@
 #    By: rnoriko <rnoriko@student.21-school.ru>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/20 09:40:10 by rnoriko           #+#    #+#              #
-#    Updated: 2022/04/20 09:40:12 by rnoriko          ###   ########.fr        #
+#    Updated: 2022/04/23 17:30:05 by rnoriko          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,12 +33,12 @@ $(NAME):		$(OBJS) ClapTrap.hpp ScavTrap.hpp FragTrap.hpp DiamondTrap.hpp
 				
 clean:
 				$(RM) $(OBJS)
+				@printf "🧹 Delete $(NAME) object file...\n"
 
 fclean:			clean
 				$(RM) $(NAME)
-				@printf "🧹 Delete $(NAME) object file...\n"
-
-re:				fclean $(NAME)
 				@printf "🧹 $(NAME) executable file was deleted\n"
 
+re:				fclean $(NAME)
+				
 .PHONY:			all clean fclean re

@@ -6,7 +6,7 @@
 /*   By: rnoriko <rnoriko@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/20 10:51:36 by rnoriko           #+#    #+#             */
-/*   Updated: 2022/04/20 10:51:37 by rnoriko          ###   ########.fr       */
+/*   Updated: 2022/04/26 08:28:54 by rnoriko          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ class MateriaSource: public IMateriaSource
 	private:
 		int			_Size;
 		AMateria**	_Sources;
+		
 	public:
 		MateriaSource();
 		MateriaSource( const MateriaSource &src );
